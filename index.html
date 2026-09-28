@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>NVIDIA — Equity Analysis Lab</title>
+    <script type="module" crossorigin src="./assets/index-BT3sxbfz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CR6NWDVd.css">
+  </head>
+  <body>
+    <main id="app">
+      <section id="stage" aria-label="Where revenue comes from and how it becomes costs, profit and cash">
+        <header class="masthead">
+          <div class="wordmark">Equity Analysis Lab</div>
+          <h1>NVIDIA</h1>
+          <p>Where each year's revenue came from and how it became costs, profit and cash, from its annual reports to the SEC. Select any number to see the filing it came from.</p>
+        </header>
+        <nav class="legend" aria-label="Colour key">
+          <span><i class="swatch revenue"></i>Money in</span>
+          <span><i class="swatch cost"></i>Costs</span>
+          <span><i class="swatch profit"></i>Profit kept</span>
+          <span><i class="swatch cash"></i>Cash</span>
+        </nav>
+        <div class="controls">
+          <div class="scale-toggle" role="group" aria-label="Height of each year">
+            <button type="button" data-mode="dollars" aria-pressed="true">Dollars</button>
+            <button type="button" data-mode="share" aria-pressed="false">Share of revenue</button>
+          </div>
+          <div class="split-toggle" role="group" aria-label="Split revenue by">
+            <span class="toggle-name">Split revenue by</span>
+            <button type="button" data-split="platform" aria-pressed="true">Platform</button>
+            <button type="button" data-split="segment" aria-pressed="false">Segment</button>
+            <button type="button" data-split="geography" aria-pressed="false">Geography</button>
+            <button type="button" data-split="" aria-pressed="false">None</button>
+          </div>
+          <div id="scrubber" role="group" aria-label="Fiscal year"></div>
+        </div>
+      </section>
+      <section id="statements" aria-label="Financial statements"></section>
+    </main>
+    <aside id="trace" aria-label="Where this number comes from" aria-live="polite"></aside>
+  </body>
+</html>
